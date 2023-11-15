@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "vpro"
+client_id = "0ee4c9bc8cd25ec33e0b1f8fd0c40e39"
+application_url = "https://education-dubai-isa-vanilla.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://education-dubai-isa-vanilla.trycloudflare.com/auth/callback",
+  "https://education-dubai-isa-vanilla.trycloudflare.com/auth/shopify/callback",
+  "https://education-dubai-isa-vanilla.trycloudflare.com/api/auth/callback",
+  "https://education-dubai-isa-vanilla.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "miz-cli-test.myshopify.com"
